@@ -67,5 +67,14 @@ class Dashboard extends CI_Controller{
             echo "Yah, Pesananmu Tidak Dapat Kami Proses";
         }
     }
+
+    public function detail($id_brg)
+    {
+        $data['barang'] = $this->model_barang->detail_brg($id_brg);
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('templates/footer');
+        $this->load->view('detail_barang', $data);
+    }
 }
 ?>
