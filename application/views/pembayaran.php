@@ -39,6 +39,7 @@
                         <div class="form-group">
                             <label>Jasa Pengiriman</label>
                                 <select class="form-control">
+                                    <option>----- SELECT PENGIRIMAN ----</option>
                                     <option>JNE</option>
                                     <option>J&T</option>
                                     <option>TIKI</option>
@@ -49,9 +50,18 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Pilih Bank</label>
+                            <label>Metode Pembayaran</label>
                                 <select class="form-control">
-                                    <option>BCA - xxxxxxx</option>
+                                    <option>Cash On Dilivery (COD)</option>
+                                    <option>Transfer (BANK)</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Pilih Bank</label>
+                                <select class="form-control" name="kategori">
+                                    <option>----- SELECT BANK ----</option>
+                                    <option?>BCA - xxxxxxx</option>
                                     <option>BNI - xxxxxxx</option>
                                     <option>BRI - xxxxxxx</option>
                                     <option>MANDIRI - xxxxxxx</option>
