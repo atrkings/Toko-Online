@@ -24,17 +24,17 @@ d
                   <form method="post" action="<?= base_url('auth/login') ?>" class="user">
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Username Mu Apa ?" name="username">
-                        <?= form_error('username', '<div class="text-danger small ml-2 mb-2 mt-2">','</div'); ?>
+                        <?= form_error('username', '<div class="text-danger small ml-2 mb-2 mt-1">','</div'); ?>
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password Mu" name="password">
-                      <?= form_error('password', '<div class="text-danger small ml-2 mb-2 mt-2">','</div'); ?>
+                      <?= form_error('password', '<div class="text-danger small ml-2 mb-2 mt-1">','</div'); ?>
                     </div>
                     <button type="submit" class="btn btn-primary form-control">Login</button>
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="register.html">Belum Punya Akun ? Ayo, Daftar !!</a>
+                    <a class="small" href="<?= base_url('registrasi/index'); ?>">Belum Punya Akun ? Ayo, Daftar !!</a>
                   </div>
                 </div>
               </div>
